@@ -1,0 +1,54 @@
+{
+  "name": "LPUTouch",
+  "version": "1.0.0",
+  "description": "LPU Touch electron client",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "npm install && electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/its-arun/LPU-Touch-Electron.git"
+  },
+  "author": "Arun Chaudhary",
+  "bugs": {
+    "url": "https://github.com/its-arun/LPU-Touch-Electron/issues"
+  },
+  "homepage": "https://github.com/its-arun/LPU-Touch-Electron#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.4.1",
+    "electron-prebuilt-compile": "1.8.2"
+  },
+  "build": {
+    "appId": "LPUTouch",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 210
+        },
+        {
+          "x": 420,
+          "y": 210,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  }
+}

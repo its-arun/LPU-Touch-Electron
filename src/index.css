@@ -1,0 +1,110 @@
+/* Variables */
+:root {
+  --background-color: #f5f5f4;
+  --text-color: #333;
+  --window-border-radius: 6px;
+  --font-size: 14px;
+}
+
+/* The arrow at the top of the window */
+.header-arrow {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  margin-left: -5px;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  background-color: #e8e6e8;
+}
+
+.window {
+  position: absolute;
+  top: 5px;
+}
+
+.toolbar {
+  box-shadow: none;
+}
+
+.window, .toolbar-header {
+  border-top-left-radius: var(--window-border-radius);
+  border-top-right-radius: var(--window-border-radius);
+}
+
+.window-content {
+  background: linear-gradient(rgba(245,245,244,0.85),rgba(245,245,244,0.85)), url(./assets/ums_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+
+.full-col {
+  width: 100%;
+  float: left;
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.column {
+  width: 50%;
+  float: left;
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.quad-col {
+  width: 25%;
+  float: left;
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.attendance {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 6vw;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.top-description{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: -12px;
+  font-size: 3vw;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.reading {
+  font-size: calc(var(--font-size) + 6px);
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.description {
+  text-transform: uppercase;
+  color: var(--text-color);
+  opacity: .7;
+  font-size: calc(var(--font-size) - 3px);
+  font-weight: 300;
+}
+
+.footer-link {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: calc(var(--font-size) - 4px);
+  float: left;
+}
+
+.footer-link a {
+  color: var(--text-color);
+}
